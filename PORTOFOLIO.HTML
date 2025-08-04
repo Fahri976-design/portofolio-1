@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mohamad Fahri</title>
+    <link rel="stylesheet" href="Desain.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: 0.4s;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            color: #555;
+        }
+        section {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 100px;
+            border: 3px solid #0077cc;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Dark mode style */
+        .dark-mode {
+            background-color: #121212;
+            color: #f2f2f2;
+        }
+
+        .dark-mode section {
+            background-color: #1e1e1e;
+            box-shadow: none;
+        }
+
+        .dark-mode button {
+            background-color: #333;
+            color: white;
+        }
+
+        .dark-mode button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mohamad Fahri</h1>
+        <h2>Portofolio Pribadi</h2>
+    </header>
+
+    <section>
+        <p><strong>Nama:</strong> Mohamad Fahri</p>
+        <p><strong>Kelas:</strong> XI RPL A</p>
+        <p><strong>Tempat Tinggal:</strong> Jl. Terusan Batubara VA</p>
+        <p><strong>Umur:</strong> 16 tahun</p>
+
+        <p><strong>Hobi:</strong> Main game </p>
+
+        <h3 style="text-align:center;">Foto Saya</h3>
+        <img src="WhatsApp Image 2025-07-25 at 13.32.27.jpeg" alt="Foto Mohamad Fahri">
+
+        <button onclick="sapa()">Klik untuk Sapa</button>
+        <button onclick="gantiTema()">Ganti Tema</button>
+    </section>
+
+    <footer>
+        &copy; 2025 Mohamad Fahri. Dibuat untuk latihan portofolio pribadi.
+    </footer>
+
+    <script>
+        function sapa() {
+            alert("Terima kasih sudah mengunjungi portofolio saya!");
+        }
+
+        function gantiTema() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+</html>
